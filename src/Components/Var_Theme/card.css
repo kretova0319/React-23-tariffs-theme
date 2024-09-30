@@ -1,0 +1,39 @@
+.card {
+  background-color: hsl(162, 5%, 52%);
+  width: 220px;
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.card__header {
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 25px 0;
+}
+.card__price {
+  justify-content: center;
+  display: flex;
+  color: white;
+  padding: 40px 0;
+}
+.card__price :nth-child(2) {
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+.card__price :last-child {
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
+.card__speed {
+  background-color: hsl(180, 13%, 95%);
+  padding: 20px 0;
+  font-size: 14px;
+}
+.card__footer {
+  background-color: hwb(180 79% 20%);
+  padding: 20px 20px;
+  font-size: 14px;
+  line-height: 20px;
+}

@@ -1,0 +1,7 @@
+.card__header {
+  background-color: hsl(0, 2%, 25%);
+}
+
+.card__price {
+  background-color: rgb(80, 78, 78);
+}
