@@ -3,14 +3,15 @@
   width: 220px;
   text-align: center;
 }
-.card:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
 .card__header {
   border-bottom: 1px solid white;
   color: white;
   padding: 25px 0;
+}
+.card__header_long {
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 35px 0;
 }
 .card__price {
   justify-content: center;

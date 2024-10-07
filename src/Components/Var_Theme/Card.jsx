@@ -1,17 +1,25 @@
 import React from "react";
-import "./card.css";
+import styles from "./card.module.css";
 
-export default function Card({ theme, headerText, price, speed }) {
+export default function Card({
+  headColor,
+  mainColor,
+  headerText,
+  price,
+  speed,
+}) {
   return (
-    <div className="card">
-      <p className={`card__header ${theme}`}>{headerText}</p>
-      <div className={`card__price ${theme}`}>
+    <div className={styles.card}>
+      <p className={`${styles.card__header} ${headColor}`}>{headerText}</p>
+      <div className={`${styles.card__price} ${mainColor}`}>
         <p>руб</p>
         <p>{price}</p>
         <p>/мес</p>
       </div>
-      <p className="card__speed">до {speed} Мбит/сек</p>
-      <p className="card__footer">Объем включенного трафика не ограничен</p>
+      <p className={styles.card__speed}>до {speed} Мбит/сек</p>
+      <p className={styles.card__footer}>
+        Объем включенного трафика не ограничен
+      </p>
     </div>
   );
 }
