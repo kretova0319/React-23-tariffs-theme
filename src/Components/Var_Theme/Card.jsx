@@ -8,9 +8,17 @@ export default function Card({
   price,
   speed,
 }) {
+  let sizing;
+  headColor === "hwb(0 30% 27%)" ? (sizing = "45px") : (sizing = "25px");
+
   return (
     <div className={styles.card}>
-      <p className={`${styles.card__header} ${headColor}`}>{headerText}</p>
+      <p
+        style={{ padding: sizing }}
+        className={`${styles.card__header} ${headColor}`}
+      >
+        {headerText}
+      </p>
       <div className={`${styles.card__price} ${mainColor}`}>
         <p>руб</p>
         <p>{price}</p>
